@@ -60,7 +60,7 @@ There are various levels of accessibility a network application/service can have
 
 Making something dark can be done in a few ways, but the way it's generally handled in Ziti is that services reach out and establish one or more connections to the Ziti network fabric. Clients coming into the fabric can then reach the service through these connections after being authenticated and authorized. 
 
-Ziti routers, which make up the fabric, can also be dark. Routers locoated in private networks will usually be made dark. These routers will reach out of the private network to talk to the controller and to make connections to join the network fabric mesh. This allows the services and routers in your private networks to make only outbound connections, so no holes have to opened for inbound traffic.
+Ziti routers, which make up the fabric, can also be dark. Routers located in private networks will usually be made dark. These routers will reach out of the private network to talk to the controller and to make connections to join the network fabric mesh. This allows the services and routers in your private networks to make only outbound connections, so no holes have to opened for inbound traffic.
 
 Services can be completely dark if they are implemented with a Ziti SDK. If this is not possible a Ziti tunneler or proxy can be colocated with the service. The service then only needs to allow connections from the local machine or network, depending on how close you colocate the proxy to the service.   
 
@@ -201,7 +201,7 @@ defined on a Ziti Network have an almost limitless "namespace"
 available for identifying services. A Ziti Service is defined by a
 name and/or a certificate, rather than by a DNS name or an IP
 address (underlay concepts). Services also declare a node where
-traffic that exits the Ziti Network needs to be sent do before
+traffic that exits the Ziti Network needs to be sent to before
 exiting. It’s possible for the node traffic enters to be the same it
 exits and it’s possible for traffic needing to traverse the Ziti
 Network Routers to reach the correct node. Simply specifying the
@@ -224,7 +224,7 @@ Policies control how Identities, Services and Edge Routers are allowed
 to interact. In order to use a service the identity must be granted
 access to the service. Also, since all access to a service goes through
 one more edge routers, both the service and the identity must be
-granted to access to the same edge router or edge routers.  
+granted access to the same edge router or edge routers.  
 
 #### ROLE ATTRIBUTES
 Entities such as identities, services and edge routers can be added to 
