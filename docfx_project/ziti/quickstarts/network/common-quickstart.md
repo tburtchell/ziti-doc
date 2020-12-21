@@ -22,7 +22,7 @@ remember to use a strong password which is not easy to guess.
 
 # [Change via UI](#tab/change-pwd-ui)
 
-These AMIs will be provided with a self-signed certificate generated during securely during the bootup process. See
+These AMIs will be provided with a self-signed certificate generated securely during the bootup process. See
 [changing pki](~/ziti/manage/pki.md) for more information.
 
 1. Log into the UI using the password obtained in the prior step
